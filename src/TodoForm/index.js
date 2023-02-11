@@ -3,7 +3,9 @@ import './TodoForm.css';
 
 function TodoForm({ addTodo, setOpenModal }) {
   const [newTodoValue, setNewTodoValue] = React.useState('');
-
+  // Desestructuramos las funciones que necesitamos para añadir un TODO y cerrar nuestro modal
+  
+  // Creamos una función para actualizar el estado de nuestro nuevo TODO
   const onChange = (event) => {
     setNewTodoValue(event.target.value);
   };
